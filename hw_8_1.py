@@ -1,16 +1,16 @@
 def add_one(some_list):
-    number_ = 0
+    num_ = 0
     count = 1
 
     for i in range(len(some_list)):
-        number_ += some_list.pop(-1) * count
+        num_ += some_list.pop(-1) * count
         count *= 10
 
-    number_ += 1
+    num_ += 1
 
-    while number_ > 0:
-        some_list.insert(0, number_ % 10)
-        number_ = number_ // 10
+    while num_ > 0:
+        some_list.insert(0, num_ % 10)
+        num_ = num_ // 10
     return some_list
 
 
